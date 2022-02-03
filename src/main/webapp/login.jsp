@@ -25,7 +25,7 @@
 <%--Using the c:choose c:when Solution--%>
 
 <%--<c:choose>--%>
-<%--    <c:when test="${param.username == 'admin' && param.password == 'password'}">--%>
+<%--    <c:when test="${param.username.equalsIgnoreCase('admin') && param.password == 'password'}">--%>
 <%--        <%response.sendRedirect("/profile.jsp");%>--%>
 <%--    </c:when>--%>
 <%--    <c:otherwise>--%>
@@ -37,9 +37,9 @@
 <%--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--%>
 <%--Using the c:choose c:if Solution--%>
 
-<c:if test="${param.username == 'admin' && param.password == 'password'}">
+<c:if test="${param.username.toLowerCase() == ('admin')  && param.password == 'password'}">
     <%response.sendRedirect("/profile.jsp");%>
 </c:if>
-<c:if test="${param.username != 'admin' || param.password != 'password'}">
+<c:if test="${param.username.toLowerCase() != 'admin' || param.password != 'password'}">
     <%response.sendRedirect("/index.jsp");%>
 </c:if>
