@@ -3,8 +3,8 @@
 <html>
 <%@ include file="partials/head.jsp" %>
 <body>
+<%@ include file="partials/navbar.jsp" %>
 <div class="container">
-    <%@ include file="partials/navbar.jsp" %>
     <div class="row">
         <form action="login.jsp" method="POST">
             <div class="form-group">
