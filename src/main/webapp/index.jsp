@@ -1,13 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
-    <title><%= "some title" %>
-    </title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-</head>
+<%@ include file="partials/head.jsp" %>
 <body>
 <div class="container">
     <%@ include file="partials/navbar.jsp" %>
@@ -30,12 +24,6 @@
         </form>
     </div>
 </div>
-<c:if test="true">
-    <h1>Variable names should be very descriptive</h1>
-</c:if>
-<c:if test="false">
-    <h1>single letter variable names are good</h1>
-</c:if>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
