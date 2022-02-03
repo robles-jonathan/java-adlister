@@ -10,6 +10,7 @@
 </head>
 <body>
 <div class="container">
+    <%@ include file="partials/navbar.jsp" %>
     <div class="row">
         <form action="login.jsp" method="POST">
             <div class="form-group">
