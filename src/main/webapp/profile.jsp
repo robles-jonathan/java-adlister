@@ -7,7 +7,10 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<%@ include file="partials/head.jsp" %>
+<head>
+    <title>My title</title>
+    <%@ include file="partials/head.jsp" %>
+</head>
 <body>
 <%@ include file="partials/navbar.jsp" %>
 <div class="jumbotron">
